@@ -2,6 +2,9 @@
 
 ![img/11.png]
 
+![DDoS Flowchart](img/11.png)
+
+
 
 #### Learning objective
 - Understand how XSS works
