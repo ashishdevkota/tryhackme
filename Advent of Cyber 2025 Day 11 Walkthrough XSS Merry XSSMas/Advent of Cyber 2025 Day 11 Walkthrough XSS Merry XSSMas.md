@@ -1,8 +1,7 @@
 
 
-![img/11.png]
 
-![DDoS Flowchart](img/11.png)
+![Lab image](img/11.png)
 
 
 
@@ -78,7 +77,9 @@ click "Send Message" button, because message is stored on the server  every time
 ## Lab 
 start machine and Attack box : 
 
-![[Tryhackme/img/xss machine.png]]
+![](img/Tryhackme/img/xss machine.png)
+
+![Lab image](img/11.png)
 
  navigate to provide ip to check web app in our case its 10.81.155.147 
  
