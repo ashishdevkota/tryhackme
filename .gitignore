@@ -1,0 +1,6 @@
+# Obsidian folder
+.obsidian/
+
+# macOS files
+.DS_Store
+**/.DS_Store
