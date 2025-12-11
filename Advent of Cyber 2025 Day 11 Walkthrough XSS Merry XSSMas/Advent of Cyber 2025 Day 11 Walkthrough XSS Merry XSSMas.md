@@ -1,6 +1,6 @@
 
 
-![https://github.com/ashishdevkota/tryhackme/blob/main/Advent%20of%20Cyber%202025%20Day%2011%20Walkthrough%20XSS%20Merry%20XSSMas/img/11.png]
+![img/11.png]
 
 
 #### Learning objective
