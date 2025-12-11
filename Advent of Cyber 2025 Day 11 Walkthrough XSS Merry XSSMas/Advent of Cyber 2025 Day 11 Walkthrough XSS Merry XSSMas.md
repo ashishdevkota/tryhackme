@@ -79,7 +79,7 @@ start machine and Attack box :
 
  navigate to provide ip to check web app in our case its 10.81.155.147 
  
-![[navigate to xss .png]]
+![navigate to xss .png]
 
 we see two text area to try our xss injection we inject  
 `<script>alert('Reflected Meow Meow')</script>`  and click on search button to capture our first flag. 
