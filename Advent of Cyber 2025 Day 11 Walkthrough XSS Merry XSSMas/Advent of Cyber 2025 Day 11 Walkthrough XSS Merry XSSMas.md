@@ -68,7 +68,7 @@ what happen here ?
 - the browser interprets javascript as executable code 
 - an alert box appear, demonstrate successful XSS execution
 
-using ==System Logs== we can track the behaviour and see how system interpret our actions.
+using "System Logs" we can track the behaviour and see how system interpret our actions.
 
 Navigate to message form and enter the malicious payload
 `<script>alert('Stored Meow Meow')</script>`
