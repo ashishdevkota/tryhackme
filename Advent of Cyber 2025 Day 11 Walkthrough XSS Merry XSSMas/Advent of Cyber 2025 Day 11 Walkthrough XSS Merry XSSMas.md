@@ -77,7 +77,7 @@ click "Send Message" button, because message is stored on the server  every time
 ## Lab 
 start machine and Attack box : 
 
-![Lab start](img/xss machine.png)
+![Lab start](img/xss_machine.png)
 
 ![Lab image](img/11.png)
 
