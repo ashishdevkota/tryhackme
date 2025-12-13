@@ -1,7 +1,7 @@
 # Advent of Cyber 2025 Day 11 Walkthrough XSS Merry XSSMas
 
 
-![Lab image](11.png)
+![Lab image](img/11.png)
 
 
 
