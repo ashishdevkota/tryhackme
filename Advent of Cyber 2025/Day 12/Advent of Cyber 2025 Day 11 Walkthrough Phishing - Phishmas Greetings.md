@@ -1,5 +1,5 @@
-![[day 12.png]]
 
+![day 12](img/day 12.png)
 First of all we will go through the important  concept  and then we will solve the lab.
 
 Story Plot : 
