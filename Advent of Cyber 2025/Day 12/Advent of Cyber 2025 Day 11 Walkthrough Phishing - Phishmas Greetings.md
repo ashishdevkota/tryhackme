@@ -6,6 +6,7 @@ Story Plot :
 TBFC's defence is weak and email protection platform is down. The staff must triage every suspicious manually because all filter are offline. The SOC suspect phishing message was send by Malhare Eggploit Bunnies to TBFC's users in order to steal credentials and also disrupt SOX-mas.
 ![[phishing-email.png]]
 
+
  we joined the incident response task force to identify legit and phishing emails.
 
 - Learning Objectives
