@@ -1,7 +1,7 @@
 # Advent of Cyber 2025 Day 11 Walkthrough XSS Merry XSSMas
 
 
-![Lab image](img/11.png)
+![Lab image](11.png)
 
 
 
@@ -77,30 +77,30 @@ click "Send Message" button, because message is stored on the server  every time
 ## Lab 
 start machine and Attack box : 
 
-![Lab start](img/xss-machine.png)
+![Lab start](xss-machine.png)
 
 
  navigate to provide ip to check web app in our case its 10.81.155.147 
  
-![send](img/navigate-to-xss.png)
+![send](navigate-to-xss.png)
 
 we see two text area to try our xss injection we inject  
 `<script>alert('Reflected Meow Meow')</script>`  and click on search button to capture our first flag. 
 
 Flag : THM{Evil_Bunny}
 
-![send](img/xss-search-message.png)
+![send](xss-search-message.png)
 
 second we try for stored xss on send a message section  with `<script>alert('Stored Meow Meow')</script>` it display out second flag.
 
 
  Flag: THM{Evil_Stored_Egg}
  
-![send](img/xss-send-amessage.png)
+![send](xss-send-amessage.png)
 
  we can check system logs here which show potential XSS detected in search.
 
-![Lab image](img/xss-system-log.png)
+![Lab image](xss-system-log.png)
 
 
 
@@ -123,5 +123,5 @@ Ans : THM{Evil_Stored_Egg}
 You have successfully completed **Advent of Cyber 2025 Day 11 Walkthrough XSS Merry XSSMas**.
 
 
-![complete](img/complete.png)
+![complete](complete.png)
 
