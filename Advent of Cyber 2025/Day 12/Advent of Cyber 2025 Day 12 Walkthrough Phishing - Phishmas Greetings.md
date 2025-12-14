@@ -1,5 +1,6 @@
+# Advent of Cyber 2025 Day 12 Walkthrough Phishing - Phishmas Greetings
+![day 12](img/day12.png)
 
-![day 12](img/day 12.png)
 First of all we will go through the important  concept  and then we will solve the lab.
 
 Story Plot : 
@@ -223,7 +224,8 @@ check message 6,  first when we see sender email and name  there we see ƒ and w
 
 
 
-![[Phishing - Phishmas Greetings/img/complete.png]]
+![phishing](img/complete.png)
 
 
-You have successfully completed Advent of Cyber 2025 Day 11 Walkthrough Phishing - Phishmas Greetings. 
+
+You have successfully completed Advent of Cyber 2025 Day 12 Walkthrough Phishing - Phishmas Greetings. 
