@@ -274,6 +274,6 @@ Ans : TBFC:[A-Za-z0-9]+
 Ans : Find me in  HopSec Island
 
 
-![compete](img/complete.png)
+![compete](img/completed.png)
 
 we  have successfully completed Advent of Cyber 2025 Day 13 Walkthrough YARA Rules - YARA mean one.Thank you 
