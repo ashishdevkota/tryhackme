@@ -1,9 +1,8 @@
 # Advent of Cyber 2025 Day 13 Walkthrough YARA Rules - YARA mean one
 
-![welcome](welcome-13.png)
 
 
-
+![welcome](img/welcome-13.png)
 First of all we will go through the important  concept  and then we will solve the lab.
 
 Story plot:
@@ -270,8 +269,10 @@ Ans : 5
 2. What regex would you use to match a string that begins with `TBFC:` followed by one or more alphanumeric ASCII characters?
 Ans : TBFC:[A-Za-z0-9]+
 
+
 3. What is the message sent by McSkidy?
 Ans : Find me in  HopSec Island
+
 
 
 ![compete](img/completed.png)
