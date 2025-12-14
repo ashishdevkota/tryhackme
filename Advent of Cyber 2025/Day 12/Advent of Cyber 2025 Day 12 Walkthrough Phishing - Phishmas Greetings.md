@@ -5,7 +5,7 @@ First of all we will go through the important  concept  and then we will solve t
 
 Story Plot : 
 TBFC's defence is weak and email protection platform is down. The staff must triage every suspicious manually because all filter are offline. The SOC suspect phishing message was send by Malhare Eggploit Bunnies to TBFC's users in order to steal credentials and also disrupt SOX-mas.
-![phishing](phishing-email.png)
+![phishing](img/phishing-email.png)
 
 
  we joined the incident response task force to identify legit and phishing emails.
@@ -30,7 +30,7 @@ some common intentions behind phishing are :
 
 Example:  attacker impersonate an employee to modify employee payroll and perform financial fraud using free domain.
 
-![example](phishing-example.png)
+![example](img/phishing-example.png)
 
 phishing remain the easiest path for initial access that target one vulnerability (people) technology can't fix.
 
@@ -46,7 +46,7 @@ some common intentions behinf spam messages :
 
 example:
 This email intention is for marketing not to steal data.
-![marketing](marketing-email.png)
+![marketing](img/marketing-email.png)
 
 
 #### The Phishmas Takeover
@@ -56,13 +56,13 @@ some of the common phishing techniques, attacker use to attempt phishing
 ### Impersonation
 attacker act as a person, department or a service to laure users.
 
-![impersonating](impersonation.png)
+![impersonating](img/impersonation.png)
 our example shows subject "URGENT: McSkidy VPN access for incident response" and checking From of message show impersonating  user by using free domain from gmail which does not align with TBFC;s domain.
 
 ### Social Engineering
 It is the art of manipulating people rather than breaking technology. attacker craft believable stories, emails, call or chat message that exploit emotions (fear, helpful, curiosity, urgency) and real world context to laure the victim.
 
-![socialengineering](social-engineering.png)
+![socialengineering](img/social-engineering.png)
 
 
 
@@ -70,17 +70,17 @@ It is the art of manipulating people rather than breaking technology. attacker c
 
 In case of typosquatting, attacker register common misspelling organisational domain changing some letters and target users lack of attention.
 
-![typos](typosquatting.png)
+![typos](img/typosquatting.png)
 
 punycode is a special encoding system that converts Unicode characters into ASCII. Typing punycode in the browser URL bar this will be translated into ASCII format which is accepted format by DNS.
 attacker can replace identical latin letters.
 
 
-![encoding](punycode-encoding.png)
+![encoding](img/punycode-encoding.png)
 
 
 when we check sender email we can identify latin letter  `ƒ` instead of  `f` which justify punycode usage for an email domain.
-![tbfx](TBFC-it.png)
+![tbfx](img/TBFC-it.png)
 
 an easy way for identifying punycode is to look field ==Return-Path== in email header, we will see ACE prefix and encoded non-ASCII characters! 
 
@@ -90,10 +90,10 @@ Email spoofing is a way attacker trick users into thinking they receive emails f
 The message look like received from legitimate sender but underlying header tell different story.
 
 
-![spoofing](spoofing.png)
+![spoofing](img/spoofing.png)
 It look like real domain from TBFC but check essential field in email header`Authentication-Results` and `Return-Path`
 
-![auth](authentication-result.png)
+![auth](img/authentication-result.png)
 
 Authentication-Results help to confirm if email really confirm from who it says it does.
 - **SPF:** Says which servers are allowed to send emails for a domain (like a list of approved senders).
@@ -104,7 +104,7 @@ on Return-Path we can see real email address.
 
 ### Malicious Attachements
 
-![malicious](maliciousattachement.png)
+![malicious](img/maliciousattachement.png)
  malicious attachment have multiple goal. when opened the file it can install malware, steal password or give attacker access to device or network.
 HTA/HTML files are commonly used for phishing because they run without browser sandboxing, meaning script have full access to the endpoint upon execution.
 
@@ -113,18 +113,18 @@ HTA/HTML files are commonly used for phishing because they run without browser s
 
 It focus tricking user to leave company secure environment which often use legitimate tools or webiste to laure  look trustworthy  and get user credentials or download malicious file themselves.
 
-![trenphishing](trending-phishing.png)
+![trenphishing](img/trending-phishing.png)
 
 ### Legitimate Applications
 attacker hiding behind trusted services such as Dropbox,Google docs and One Drive because the link look legitimate and often pass email filters.
 
 once user click the link, it redirect to a shared document with fake content. The goal is to steal credentials or download malicious files.
-![legi](legitimate.png)
+![legi](img/legitimate.png)
 
 ### Fake Login pages
 
 the main goal is to steal credential by tricking  user to enter credentials into login pages.
-![fake](fake-login.png)
+![fake](img/fake-login.png)
 
 
 checking url we can see fake domain microsoftonline.login444123.com/signin
@@ -135,7 +135,7 @@ checking url we can see fake domain microsoftonline.login444123.com/signin
 
 side channel communication happen when an attacker moves the conversation off email to another channel such as SMS, Whatsapp, a phone , a texted link or share document to continue social engineering in a platform without company control.
 
-![side](side-channel.png)
+![side](img/side-channel.png)
 
 ####  Time To Spot the Phish and Save SOC-mas!
 
@@ -147,12 +147,12 @@ selecting right phishing email  will help to catch a flag and to complete the ro
 ## Lab
 Now we will walk through lab to catch flags.start machine to get target machine ip. 
 ##### connecting to the machine
-![lab](start-machine.png)
+![lab](img/start-machine.png)
 
 
 visit https://10-82-138-202.reverse-proxy.cell-prod-eu-west-1c.vm.tryhackme.com/ accessing the  portal we see mail portal. 
 
-![firstview](firstview.png)
+![firstview](img/firstview.png)
 
 
 first we check  sender  1st email it looks legitimate, then after reading message when we check attachment there is no invoice so it fall on Fake invoice category, secondly in message we see sense of urgency " Call PayPal immediately"  and at last when we check header  specially Authentication-Results  , both "spf" and "dkim" fails  so its definitely a spoofing email.  when submitting the result , classifying it as phishing email  we catch our fist flag.
