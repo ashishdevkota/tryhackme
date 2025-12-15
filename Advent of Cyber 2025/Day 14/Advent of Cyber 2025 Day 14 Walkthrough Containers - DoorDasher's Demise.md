@@ -9,7 +9,7 @@ DoorDasher is Wareville local food delivery site of the workers in The Best Fest
 
 
 
-![news](news.png)
+![news](img/news.png)
 
 immediately one of security engineer managed to log on and make a script to restore DoorDasher to its original state but unable to run Sir CarrotBaine caught his attemp and locked him out of the system. all was lost until the SOC team realised they had access to the system via their monitoring pod, an iptime checker for the site. 
 
