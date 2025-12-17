@@ -2,7 +2,7 @@
 # Advent of Cyber 2025 Day 14 Walkthrough Containers - DoorDasher's Demise
 Continue your Advent of Cyber journey and learn about container security.
 
-![welcome](img/welcome.png)
+![welcome](Day%2014/img/welcome.png)
 
 ### Story
 DoorDasher is Wareville local food delivery site of the workers in The Best Festival company. The resident decide to order breakfast figure out that Kingh Malhare and his bundit had seized control over the festival rebranded completely and favourite dishes also been changed.report started flood into DoorDasher call center even the health and safety food org is panicking. Wareville authorities were left trangled in confusions hopperoo faced mounting backlash over report of "culinary impersonation". A spokesperson for health & safety food Bureau confirmed that several dinners required "gentle untangling" and one incident involve a customer achieving accidental facial hair  synchronisation.
